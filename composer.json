@@ -1,0 +1,26 @@
+{
+	"name": "printfection/printfection-php",
+	"description": "Printfection PHP Library",
+	"keywords": [
+		"printfection",
+		"swag marketing",
+		"api"
+	],
+	"homepage": "http://printfection.com/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Printfection and contributors",
+			"homepage": "https://github.com/printfection/printfection-php/contributors"
+		}
+	],
+	"require": {
+		"php": ">=5.2",
+		"ext-curl": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*"
+	},
+	"autoload": {
+		"classmap": ["lib/Printfection/"]
+	}
+}
