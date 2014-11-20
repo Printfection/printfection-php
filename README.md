@@ -1,10 +1,10 @@
 You can sign up for a Printfection account at http://printfection.com.
 
-== Requirements
+## Requirements
 
 PHP 5.2 and later.
 
-== Composer
+## Composer
 
 You can install the bindings via Composer[http://getcomposer.org/]. Add this to your +composer.json+:
 
@@ -26,7 +26,7 @@ Or manually:
 
     require_once('/path/to/vendor/printfection/printfection-php/lib/Printfection.php');
 
-== Manual Installation
+## Manual Installation
 
 Obtain the latest version of the Printfection PHP bindings with:
 
@@ -36,7 +36,7 @@ To use the bindings, add the following to your PHP script:
 
     require_once("/path/to/printfection-php/lib/Printfection.php");
 
-== Getting Started
+## Getting Started
 
 Simple usage looks like:
 
@@ -64,6 +64,6 @@ Simple usage looks like:
 
     echo $order;
 
-== Documentation
+## Documentation
 
 Please see http://printfection.github.io/API-Documentation/ for up-to-date documentation.
