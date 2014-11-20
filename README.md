@@ -67,3 +67,7 @@ Simple usage looks like:
 ## Documentation
 
 Please see http://printfection.github.io/API-Documentation/ for up-to-date documentation.
+
+## Acknowledgements
+
+This API client was strongly inspired by (and based on) the [Stripe PHP client library](https://github.com/stripe/stripe-php/). Special thanks to everyone who has worked on that project.
