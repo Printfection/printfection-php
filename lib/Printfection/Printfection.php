@@ -9,13 +9,13 @@ abstract class Printfection {
 	/**
 	 * @var string The base URL for the Printfection API.
 	 */
-	public static $apiBase = 'https://api.printfection.dev';
+	public static $apiBase = 'https://api.printfection.com';
 
 	/**
 	 * @var boolean Defaults to true.
 	 */
 	public static $verifySslCerts = false;
-	const VERSION = '0.0.1';
+	const VERSION = '1.0.0';
 
 	/**
 	 * @return string The API key used for requests.
