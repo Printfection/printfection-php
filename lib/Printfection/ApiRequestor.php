@@ -169,7 +169,7 @@ class Printfection_ApiRequestor {
 		$headers = array(
 				'X-Printfection-Client-User-Agent: ' . json_encode($ua),
 				'User-Agent: Printfection/v2 PhpBindings/' . Printfection::VERSION,
-				'Authorization: Bearer ' . $myApiKey,
+				'Authorization: Basic ' . base64_encode("$myApiKey:"),
 				'Content-Type: application/json',
 		);
 
@@ -225,7 +225,7 @@ class Printfection_ApiRequestor {
 		}
 
 		$absUrl = self::utf8($absUrl);
-		
+
 		$opts[CURLOPT_URL] = $absUrl;
 		$opts[CURLOPT_RETURNTRANSFER] = true;
 		$opts[CURLOPT_CONNECTTIMEOUT] = 30;
@@ -249,7 +249,7 @@ class Printfection_ApiRequestor {
 
 		$rcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 		curl_close($curl);
-		
+
 		return array($rbody, $rcode);
 	}
 
@@ -277,7 +277,7 @@ class Printfection_ApiRequestor {
 		}
 
 		$msg .= "\n\n(Network error [errno $errno]: $message)";
-		
+
 		throw new Printfection_ApiConnectionError($msg);
 	}
 }
