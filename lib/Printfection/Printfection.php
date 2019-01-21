@@ -14,7 +14,7 @@ abstract class Printfection {
 	/**
 	 * @var boolean Defaults to true.
 	 */
-	public static $verifySslCerts = false;
+	public static $verifySslCerts = true;
 	const VERSION = '1.0.0';
 
 	/**
