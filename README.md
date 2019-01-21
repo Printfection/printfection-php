@@ -47,11 +47,13 @@ Simple usage looks like:
         'ship_to' => array(
                 'name' => 'Herman Munster',
                 'address' => '1313 Mockingbird Lane',
+                'address2' => '#1200',
                 'city' => 'Mockingbird Heights',
                 'state' => 'California',
                 'zip' => '90210',
                 'country' => 'US',
-                'email' => 'herman@printfection.com'
+                'email' => 'herman@printfection.com',
+                'phone' => '3034597990'
             ),
         'lineitems' => array(
                 array(
